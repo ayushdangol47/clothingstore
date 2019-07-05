@@ -4,7 +4,7 @@ const client = require("../knexfile");
 const knex = require("knex")(client);
 
 const storage = multer.diskStorage({
-  destination: "./uploads/foods",
+  destination: "./uploads",
   filename: (req, file, cb) => {
     cb(
       null,
